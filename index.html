@@ -1,8 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
+  <title>Heavy LOAD!</title>
   <meta charset="utf-8">
-  <title>Heavy Load</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  (icon goes here) --> <link rel="icon" 
+            type="image/png" 
+            href="images/heavy.png">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+     <!-- Link to Moment.js should go here -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="
   sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -11,6 +25,69 @@
   <script src="app.js"></script>
 </head>
 <body>
+<!-- side bars -->
+<!-- side bar one -->
+<div class="sidebar">
+  <ul style="list-style: none;">
+    <li><a href="#">Friends</a></li>
+    <li><a href="#">Online</a></li>
+    <li><a href="#">Playlist</a></li>
+  </ul>
+</div>
+<!-- sidebar button -->
+
+
+<div id="content">
+  <a class="btn">
+    <span id="arrow"class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+  </a>
+</div>
+
+
+<!-- side bar ends -->
+<!--///////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////// -->
+<!--Page Container -->
+<div class="container">
+  <div>
+    <!-- Clock -->
+    <div class="container jumbotron" id="clock-div">
+        <div><h1 id="time"><span id="clock"></span></h1></div>
+    </div>
+
+    <!--Buttons -->
+    <div class="container" id="button-div">
+
+      <button><h1>1st button</h1></button>
+      <button><h1>2nd button</h1></button>
+      <button><h1>3rd button</h1></button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+              </div>
+              <div class="col">
+                  3 of 3
+                </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="app.js"></script>
 <div class="container">
   <form role="form">
     <div class="form-group">
