@@ -3,6 +3,7 @@
 <head>
   <title>Heavy LOAD!</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--  (icon goes here) --> <link rel="icon" 
             type="image/png" 
             href="images/heavy.png">
@@ -20,20 +21,60 @@
 </head>
 
 <body>
+<!-- side bars -->
+<!-- side bar one -->
+<div class="sidebar">
+  <ul style="list-style: none;">
+    <li><a href="#">Friends</a></li>
+    <li><a href="#">Online</a></li>
+    <li><a href="#">Playlist</a></li>
+  </ul>
+</div>
+<!-- sidebar button -->
 
+
+<div id="content">
+  <a class="btn">
+    <span id="arrow"class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+  </a>
+</div>
+
+
+<!-- side bar ends -->
+<!--///////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////// -->
 <!--Page Container -->
 <div class="container">
   <div>
     <!-- Clock -->
     <div class="container jumbotron" id="clock-div">
-        <h1> clock goes here</h1>
+        <div><h1 id="time"><span id="clock"></span></h1></div>
     </div>
 
     <!--Buttons -->
     <div class="container" id="button-div">
-      <button><h1>Snooze</h1></button>
-      <br><br>
-      <button><h1>I'm Up!</h1></button>
+
+      <button><h1>1st button</h1></button>
+      <button><h1>2nd button</h1></button>
+      <button><h1>3rd button</h1></button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+              </div>
+              <div class="col">
+                  3 of 3
+                </div>
+      </div>
     </div>
 
   </div>
