@@ -1,0 +1,247 @@
+body {
+    background: #f0f0f0;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    /* Might need to remove this to be able to scroll on the slack api */
+    overflow-y: hidden;
+}
+/* stopwatch */
+#stopwatch-div {
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 250px; 
+    margin: 20px;    
+}
+/* Current Time clock */
+#time-pos {
+    background: #f0f0f0;
+    width: 300px; 
+    height: 150px;  
+    z-index: -1;
+    float: left;
+}
+#time-div {
+    width: 82%;
+    height: 30%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: auto;  
+}
+#time {
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+#clock {
+   
+}
+/* Info Div */
+#info-div {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    margin-left: 450px;
+}
+p {
+    font-size: 20px;
+    font-family: serif;
+}
+/* unites clock and info div on to the same container */
+#clock-info {
+    width: 900px;
+    height: 300px;
+    background: #f0f0f0;
+    position: relative;
+    margin-top: 50px;
+    z-index: -1;
+}
+/* (START, STOP AND RESET BUTTONS) */
+#button-div {
+   width: 900px;
+   height: 80px;
+   background: #f0f0f0;
+}
+#center-buttons {
+    background: #f0f0f0;
+    width: 80%;
+    height: 100%;
+}
+/* background of buttons */
+#controls {
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 150px;
+    height: 60px;
+    float: left;  
+    justify-content: center;  
+    margin: 10px 30px;
+    z-index: 0;
+    /*what control should have been */
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 0;
+}
+#controls:hover {
+    background: gray;
+    transition: 0.2s;
+}
+/* This is for the words inside control buttons (START, STOP, RESET) */
+/* 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////Side Bar Starts///////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+*/
+body,html {
+    height: 100%;
+    width: 100%;
+ }
+ 
+ .sidebar {
+    float: left;
+    width: 150px;
+    margin-left: -150px;
+    height: 100%;
+    background: red;
+    overflow: hidden;
+    transition: 0.8s all;
+ }
+ 
+ .side {
+    margin-left: 0px;
+ }
+ 
+ .sidebar ul {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+ }
+ 
+ /* Where it says music api goes here */
+ .sidebar ul li a:hover {
+    background: black;
+    color: rgb(194, 194, 194); 
+ }
+ /* nothing visible, this changes the icon for some reason  */
+ .btn {
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+ }
+ /* button background */
+ a.btn{
+     background: red;
+     height: 850px;
+ }
+/* music icon */
+ span.glyphicon-music {
+    font-size: 50px;
+    color: white;
+    align-content: center;
+}
+/*////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////*/
+/* Slack Side Bar */
+.sidebar2 {
+    float: right;
+    width: 300px;
+    margin-right: -300px;
+    height: 850px;
+    background: green;
+    overflow: hidden;
+    transition: 0.8s all;
+    z-index: 1;
+ }
+ 
+ .side2 {
+    margin-right: 0px;
+ }
+ 
+ .sidebar2 ul {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .sidebar2 ul li a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+ }
+ 
+ /* Where it says slack api goes here */
+ .sidebar2 ul li a:hover {
+    background: black;
+    color: rgb(194, 194, 194); 
+ }
+ /* nothing visible, this changes the icon for some reason  */
+ .btn2 {
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+ }
+ /* button background */
+ a.btn2{
+     background: green;
+     height: 850px;
+ }
+/* slack icon */
+ span.glyphicon-comment {
+    font-size: 50px;
+    color: white;
+    align-content: center;
+}
+ /* 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////Side Bar Ends/////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+*/
