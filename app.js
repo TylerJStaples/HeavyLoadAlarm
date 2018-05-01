@@ -1,22 +1,22 @@
-// Sidebar
-
-var right = "glyphicon glyphicon-chevron-right";
-var left = "glyphicon glyphicon-chevron-left";
+// Sidebar One
 
 $(document).ready(function() {
     $('.btn').on('click', function() {
         $('.sidebar').toggleClass('side');
-        $(".btn").toggleClass(".btnc");        
     });
  });
 
- /*$(document).ready(function() {
-    $('.btn').on('click', function() {
-        $('.sidebar').toggleClass('side');
-        $('#arrow').toggleClass("glyphicon glyphicon-chevron-left");
-    });
- });*/
 
+
+ // SideBar Two
+
+ $(document).ready(function() {
+    $('.btn2').on('click', function() {
+        $('.sidebar2').toggleClass('side2');
+    });
+ });
+
+ 
  // Clock
  function clock() {
     setInterval (function () {

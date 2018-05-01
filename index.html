@@ -10,6 +10,8 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="
+  sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,20 +20,21 @@
 
      <!-- Link to Moment.js should go here -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="
-  sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
-<!-- side bars -->
+<!-- side bars begin -->
+
+
+
+
 <!-- side bar one -->
 <div class="sidebar">
   <ul style="list-style: none;">
-    <li><a href="#">Friends</a></li>
-    <li><a href="#">Online</a></li>
-    <li><a href="#">Playlist</a></li>
+    <li><a href="#">Music API goes here</a></li>
   </ul>
 </div>
 <!-- sidebar button -->
@@ -39,49 +42,94 @@
 
 <div id="content">
   <a class="btn">
-    <span id="arrow"class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+    <span class="glyphicon glyphicon-music" aria-hidden="true">
   </a>
 </div>
 
 
+
+
+
+
+<!-- Side Bar Two -->
+
+
+
+<!-- Area-->
+<div class="sidebar2">
+    <ul style="list-style: none;">
+      <li><a href="#">Slack API goes here</a></li>
+    </ul>
+  </div>
+  <!-- sidebar button -->
+  
+  
+  <div id="content2">
+    <a class="btn2">
+      <span class="glyphicon glyphicon-comment" aria-hidden="true">
+    </a>
+  </div>
+
+
+
+
 <!-- side bar ends -->
+
+ 
+
 <!--///////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////// -->
+
 <!--Page Container -->
 <div class="container">
   <div>
-    <!-- Clock -->
-    <div class="container jumbotron" id="clock-div">
-        <div><h1 id="time"><span id="clock"></span></h1></div>
+    <!-- Stopwatch -->
+    <div class="container jumbotron" id="stopwatch-div">
+        
     </div>
 
     <!--Buttons -->
+
     <div class="container" id="button-div">
 
-      <button><h1>1st button</h1></button>
-      <button><h1>2nd button</h1></button>
-      <button><h1>3rd button</h1></button>
-    </div>
+      
+          <div class="container" id="center-buttons"> 
 
-    <div class="container">
-      <div class="row">
-          <div class="col">
-              1 of 3
-            </div>
-            <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                  3 of 3
-                </div>
+            <button type="button" class="btn-default" id="controls">
+              <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
+            </button>
+
+            <button type="button" class="btn-default" id="controls">
+                <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+              </button>
+
+              <button type="button" class="btn-default" id="controls">
+                  <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span> Reset
+                </button>
+            
+
+         
+              
+         </div>       
+      
+    </div> <!-- end of buttons -->
+
+
+    <!-- stopwatch -->
+    <div class="container" id="time-pos">
+      <div id="time-div">
+        <h3 id="time">
+          <span id="clock"></span>
+        </h3>
       </div>
     </div>
 
-  </div>
+
+  </div> 
 </div>
 
 
