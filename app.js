@@ -10,9 +10,17 @@ $(document).ready(function() {
 
  // SideBar Two
 
+ // On load, it needs to be hidden
+$(document).ready( function () {
+    $('.sidebar2').hide();
+});
+
+// On click, show the sidebar
  $(document).ready(function() {
     $('.btn2').on('click', function() {
+        $('.sidebar2').show();
         $('.sidebar2').toggleClass('side2');
+        
     });
  });
 
@@ -20,7 +28,7 @@ $(document).ready(function() {
  // Clock
  function clock() {
     setInterval (function () {
-        $('#clock').html(moment().format('hh:mm:ss A'))
+        $('#time').html(moment().format('hh:mm:ss A'))
     }, 1000)
 }
 clock();
