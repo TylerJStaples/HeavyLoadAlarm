@@ -76,7 +76,7 @@ p {
     height: 100%;
 }
 /* background of buttons */
-#controls {
+.controls {
     background: white;
     border: 2px solid black;
     border-radius: 3px;
