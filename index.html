@@ -4,8 +4,8 @@
   <title>Heavy LOAD!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--  (icon goes here) --> <link rel="icon" 
-            type="image/png" 
+<!--  (icon goes here) --> <link rel="icon"
+            type="image/png"
             href="images/heavy.png">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
      <!-- Link to Moment.js should go here -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src = "https://d3js.org/d3-timer.v1.min.js"></script><!--Timer API-->
@@ -29,6 +29,7 @@
   <ul style="list-style: none;">
     <li><a href="#">Music API goes here</a></li>
   </ul>
+  <div id="lastfm"></div>
 </div>
 <!-- sidebar button -->
 <div id="content">
@@ -44,15 +45,15 @@
     </ul>
   </div>
   <!-- sidebar button -->
-  
-  
+
+
   <div id="content2">
     <a class="btn2">
       <span class="glyphicon glyphicon-comment" aria-hidden="true">
     </a>
   </div>
 <!-- side bar ends -->
- 
+
 <!--///////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////
@@ -69,8 +70,8 @@
     </div>
     <!--Buttons -->
     <div class="container" id="button-div">
-      
-          <div class="container" id="center-buttons"> 
+
+          <div class="container" id="center-buttons">
             <button type="button" class="btn-default controls" id="start">
               <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
             </button>
@@ -80,11 +81,11 @@
               <button type="button" class="btn-default controls" id="reset">
                   <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span> Reset
                 </button>
-            
-         
-              
-         </div>       
-      
+
+
+
+         </div>
+
     </div> <!-- end of buttons -->
     <!-- unites clock and info into a single div -->
 <div class="container" id="clock-info">
@@ -103,7 +104,7 @@
         </p>
       </div>
 </div>
-  </div> 
+  </div>
 </div>
 <script type="text/javascript" src="app.js"></script>
 </body>
