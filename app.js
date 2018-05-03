@@ -36,13 +36,11 @@ $(document).ready(function() {
         }
     })
     .then(function(response) {
-      var results = response.data;
       var p = $("<p>").text(results);
       $("#lastfm").append(p);
       var imglastfm = $("<img>");
-      imglastfm.attr("src =" + results.artist.image[0].text);
-
     });
+
   });
   // SideBar Two
   // On load, it needs to be hidden
