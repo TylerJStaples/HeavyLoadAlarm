@@ -43,6 +43,7 @@ $(document).ready(function() {
      $('.sidebar2').show();
      $('.sidebar2').toggleClass('side2');
 
+
      var database = firebase.database();
 
    });
