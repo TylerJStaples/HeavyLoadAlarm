@@ -13,7 +13,6 @@ $(document).ready(function() {
 
  // Sidebar One
  $(document).ready(function() {
-<<<<<<< HEAD
     $('.btn').on('click', function() {
       $('.sidebar').toggleClass('side');
       var queryURL = "https://api.napster.com/v2.1/tracks/top?apikey=MWEyNTMyOGEtNTZiYS00ZjNmLThkMGMtMzExMTllNjQzMGJh";
@@ -43,45 +42,6 @@ $(document).ready(function() {
    $('.btn2').on('click', function() {
      $('.sidebar2').show();
      $('.sidebar2').toggleClass('side2');
-=======
-   $('.btn').on('click', function() {
-     $('.sidebar').toggleClass('side');
-
-      $.ajax({
-        type : 'POST',
-        url : 'https://ws.audioscrobbler.com/2.0/',
-        data : 'method=artist.getinfo&' +
-               'playlist.fetch&' +
-               'artist=Nas&' +
-               'api_key=4cfb3ad46313f41be3ff0885b455659a&' +
-               'format=json',
-        method : 'package.method',
-        dataType : 'jsonp',
-        success : function(data) {
-            console.log(data);
-        },
-        error : function(code, message){
-            // Handle error here
-        }
-    })
-    .then(function(response) {
-      var p = $("<p>").text(results);
-      $("#lastfm").append(p);
-      var imglastfm = $("<img>");
-    });
-
-  });
-  // SideBar Two
-  // On load, it needs to be hidden
-  $(document).ready(function() {
-    $('.sidebar2').hide();
-  });
-  // On click, show the sidebar
-  $(document).ready(function() {
-    $('.btn2').on('click', function() {
-      $('.sidebar2').show();
-      $('.sidebar2').toggleClass('side2');
->>>>>>> bde3cf3cd996028e44d67312eee624ae1fa7c424
 
 
      var database = firebase.database();
