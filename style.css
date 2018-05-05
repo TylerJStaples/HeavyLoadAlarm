@@ -12,7 +12,8 @@ body {
     border: 2px solid black;
     border-radius: 3px;
     height: 250px; 
-    margin: 20px;    
+    margin: 20px; 
+    z-index: -1;   
 }
 /* Current Time clock */
 #time-pos {
@@ -28,12 +29,14 @@ body {
     background: white;
     border: 2px solid black;
     border-radius: 3px;
+    
     margin-top: 5px;
     margin-left: 10px;
     margin-right: auto;  
 }
 #time {
     width: 250px;
+    
     font-size: 30px;
     text-align: center;
     color: black;
@@ -54,6 +57,8 @@ body {
 p {
     font-size: 20px;
     font-family: serif;
+    margin: auto;
+    font-weight: 600;
 }
 /* unites clock and info div on to the same container */
 #clock-info {
@@ -92,7 +97,8 @@ p {
     font-weight: 500;
     z-index: 0;
 }
-#controls:hover {
+.controls:hover {
+    border: 2px solid black;
     background: gray;
     transition: 0.2s;
 }
@@ -121,7 +127,7 @@ body,html {
     width: 150px;
     margin-left: -150px;
     height: 100%;
-    background: red;
+    background: #0000ff;
     overflow: hidden;
     transition: 0.8s all;
  }
@@ -162,13 +168,17 @@ body,html {
  }
  /* button background */
  a.btn{
-     background: red;
+     background: #0000ff;
      height: 850px;
  }
 /* music icon */
- span.glyphicon-music {
+/* span.glyphicon-music {
     font-size: 50px;
     color: white;
+    align-content: center;
+}*/
+.lastfm {
+    
     align-content: center;
 }
 /*////////////////////////////////////////////////////////////////////
@@ -180,7 +190,7 @@ body,html {
     width: 300px;
     margin-right: -300px;
     height: 850px;
-    background: green;
+    background: #1db954;
     overflow: hidden;
     transition: 0.8s all;
     z-index: 1;
@@ -222,7 +232,7 @@ body,html {
  }
  /* button background */
  a.btn2{
-     background: green;
+     background: #1db954;
      height: 850px;
  }
 /* slack icon */
@@ -245,3 +255,56 @@ body,html {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 */
+/*
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+Chat Application Stuff 
+//
+//
+//
+/
+//
+//
+/
+/
+/
+/
+/
+/
+*/
+/*
+//
+/
+/
+/
+/
+/
+/
+/
+/
+End of Chat application stuff
+//
+/
+/
+/
+/
+/
+/
+/
+*/
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    a.btn2{
+        width: 72px;
+        margin-left: 150px;
+    }
+  
+}
